@@ -77,27 +77,33 @@ public class SmellLabManager : MonoBehaviour {
 
         if (!increaseActive)
         {
-            double day = (dateNow - lastActiveDate).TotalHours;
-            if(day > 0.05)
+            double day = (lastActiveDate - dateNow).TotalHours;
+            Debug.Log("For Reduce: " + day + ", and flawour is : "+ flawour);
+            if(day > 0.001)
             {
                 int reduceValue = (int)day;
-                if(reduceValue >= flawour)
+                Debug.Log("For Reduce: " + reduceValue);
+                if (reduceValue >= flawour)
                 {
                     flawour = 0;
-                }else
+                    Debug.Log("For flavor value: " + sourFlawourValue + ", and flawour is : " + flawour);
+                }
+                else
                 {
                     flawour -= reduceValue;
+                    Debug.Log("For Reduce: " + day + ", and flawour is : " + flawour);
                 }
                 
             }
 
         }
+        Debug.Log("Doso");
         saveToPrefs();
 
 
     }
     /*
-    public void buyFlawoR()
+    public  buyFlawoR()
     {
         Button btn = this.
         string tag = this.tag;

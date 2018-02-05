@@ -9,7 +9,10 @@ public class MainSceneFrontendScript : MonoBehaviour
     public GameObject menuButton;
     Text menuButtonText;
 
+    public GameObject statsPanel;
+
     bool menuPanelActive = false;
+    bool statsPanelActive = false;
 
     // Use this for initialization
     void Start()
@@ -30,6 +33,7 @@ public class MainSceneFrontendScript : MonoBehaviour
         if (!menuPanelActive)
         {
             menuPanelActive = true;
+            statsPanel.SetActive(false);
             menuPanel.SetActive(true);
             menuButtonText.text = "Close";
 
@@ -40,6 +44,26 @@ public class MainSceneFrontendScript : MonoBehaviour
             menuPanel.SetActive(false);
 
             menuButtonText.text = "Menu";
+        }
+    }
+    public void statsButton()
+    {
+
+
+        if (!statsPanelActive)
+        {
+            statsPanelActive = true;
+            menuPanel.SetActive(false);
+            statsPanel.SetActive(true);
+           // menuButtonText.text = "Close";
+
+        }
+        else
+        {
+            statsPanelActive = false;
+            statsPanel.SetActive(false);
+
+           // menuButtonText.text = "Menu";
         }
     }
 }
