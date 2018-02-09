@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainSceneFrontendScript : MonoBehaviour
@@ -34,6 +35,7 @@ public class MainSceneFrontendScript : MonoBehaviour
         {
             menuPanelActive = true;
             statsPanel.SetActive(false);
+            statsPanelActive = false;
             menuPanel.SetActive(true);
             menuButtonText.text = "Close";
 
@@ -54,6 +56,7 @@ public class MainSceneFrontendScript : MonoBehaviour
         {
             statsPanelActive = true;
             menuPanel.SetActive(false);
+            menuPanelActive = false;
             statsPanel.SetActive(true);
            // menuButtonText.text = "Close";
 
@@ -66,4 +69,5 @@ public class MainSceneFrontendScript : MonoBehaviour
            // menuButtonText.text = "Menu";
         }
     }
+   
 }

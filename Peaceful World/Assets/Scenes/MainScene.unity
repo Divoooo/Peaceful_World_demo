@@ -479,8 +479,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
+      - m_Target: {fileID: 1809797250}
+        m_MethodName: CBDLabScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -601,8 +601,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
+      - m_Target: {fileID: 1809797250}
+        m_MethodName: IndustryLabScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -797,8 +797,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
+      - m_Target: {fileID: 1809797250}
+        m_MethodName: THCLabScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2292,6 +2292,7 @@ GameObject:
   - component: {fileID: 1313236311}
   - component: {fileID: 1313236310}
   - component: {fileID: 1313236309}
+  - component: {fileID: 1313236312}
   m_Layer: 5
   m_Name: StatsButton
   m_TagString: Untagged
@@ -2403,6 +2404,25 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1313236307}
+--- !u!114 &1313236312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1313236307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ea75ed05e111f24c88ef75170128d93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sourLvl: {fileID: 407461808}
+  spicyLvl: {fileID: 1404166697}
+  sweetLvl: {fileID: 864299377}
+  bitterLvl: {fileID: 782462169}
+  savoryLvl: {fileID: 640666703}
+  industry: {fileID: 2051963097}
+  thc: {fileID: 1030007048}
+  cbd: {fileID: 1732587401}
 --- !u!1 &1404166695
 GameObject:
   m_ObjectHideFlags: 0
@@ -2919,8 +2939,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
+      - m_Target: {fileID: 1809797250}
+        m_MethodName: SmellLabScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3072,6 +3092,7 @@ GameObject:
   - component: {fileID: 1809797247}
   - component: {fileID: 1809797249}
   - component: {fileID: 1809797248}
+  - component: {fileID: 1809797250}
   m_Layer: 5
   m_Name: MenuPanel
   m_TagString: Untagged
@@ -3134,6 +3155,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1809797246}
+--- !u!114 &1809797250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1809797246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95c8d89bc2e8e6f4a88c27a92940a679, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1939046458
 GameObject:
   m_ObjectHideFlags: 0

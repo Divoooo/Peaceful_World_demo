@@ -87,28 +87,28 @@ public class TimeManager : MonoBehaviour {
             {
                 case "sourFlaworDate":
 
-                    sourFlawourActive = CheckTime(currentActivationDate);
+                    sourFlawourActive = CheckTime(currentActivationDate, "sourFlaworDate", "sourFlawourIndex");
 
 
                     break;
                 case "spicyFlaworDate":
 
-                    spicyFlawourActive = CheckTime(currentActivationDate);
+                    spicyFlawourActive = CheckTime(currentActivationDate, "spicyFlaworDate", "spicyFlawourIndex");
 
                     break;
                 case "sweetFlaworDate":
 
-                    sweetFlawourActive = CheckTime(currentActivationDate);
+                    sweetFlawourActive = CheckTime(currentActivationDate, "sweetFlaworDate", "sweetFlawourIndex");
 
                     break;
                 case "bitterFlaworDate":
 
-                    bitterFlawourActive = CheckTime(currentActivationDate);
+                    bitterFlawourActive = CheckTime(currentActivationDate, "bitterFlaworDate", "bitterFlawourIndex");
 
                     break;
                 case "savoryFlaworDate":
 
-                    savoryFlawourActive = CheckTime(currentActivationDate);
+                    savoryFlawourActive = CheckTime(currentActivationDate, "savoryFlaworDate", "savoryFlawourIndex");
 
                     break;
             }
@@ -117,18 +117,23 @@ public class TimeManager : MonoBehaviour {
             Debug.Log("Theres no actived date");
         }
     }
-    public bool CheckTime(DateTime activeTime) {
+    public bool CheckTime(DateTime activeTime,string dateName,string indexName) {
 
 
         DateTime datevalue1 = activeTime;
         DateTime datevalue2 = DateTime.Now;
-        double hours = (datevalue2 - datevalue1).TotalHours;
+        double hours = (datevalue2 - datevalue1).TotalMinutes;
         Debug.Log("It has been " + hours.ToString() + " hours since u Active that Flawor");
-        if (hours < 0.11 && hours != 0.000)
+        if (hours < 1 && hours != 0.000)
         {
             return true;
+
         }else
         {
+            PlayerPrefsManager.SetLastActivityFlawour(indexName, 0);
+            DateTime currTime = new DateTime(activeTime.Year, activeTime.Month, activeTime.Day , activeTime.Hour, activeTime.Minute - 1, activeTime.Second);
+            PlayerPrefsManager.SetCustomDate(name, currTime);
+
             return false;
         }
 

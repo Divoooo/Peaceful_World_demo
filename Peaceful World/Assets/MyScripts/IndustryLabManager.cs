@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class IndustryLabManager : MonoBehaviour {
 
@@ -20,4 +21,8 @@ public class IndustryLabManager : MonoBehaviour {
 	void Update () {
 		
 	}
+    public void backScene()
+    {
+        SceneManager.LoadScene("MainScene");
+    }
 }

@@ -4,4 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainScene.unity
+    guid: b6c43b34762f7a94fbf2baa6d6f939be
+  - enabled: 1
+    path: Assets/Scenes/SmellLab.unity
+    guid: a4d28ab9b90a5334a8221e40a847fbe3
+  - enabled: 1
+    path: Assets/Scenes/IndustryLab.unity
+    guid: ec2feeebda28d864e91ccb2677529fcf
