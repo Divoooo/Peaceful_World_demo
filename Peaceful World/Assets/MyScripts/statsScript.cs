@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,16 +17,16 @@ public class statsScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        sourLvl.text = PlayerPrefsManager.GetFlaworValue("sourFlaworValue").ToString();
-        spicyLvl.text = PlayerPrefsManager.GetFlaworValue("spicyFlaworValue").ToString();
-        sweetLvl.text = PlayerPrefsManager.GetFlaworValue("sweetFlaworValue").ToString();
-        bitterLvl.text = PlayerPrefsManager.GetFlaworValue("bitterFlaworValue").ToString();
-        savoryLvl.text = PlayerPrefsManager.GetFlaworValue("savoryFlaworValue").ToString();
+     //   sourLvl.text = PlayerPrefsManager.GetFlaworValue("sourFlaworValue").ToString();
+      //  spicyLvl.text = PlayerPrefsManager.GetFlaworValue("spicyFlaworValue").ToString();
+      //  sweetLvl.text = PlayerPrefsManager.GetFlaworValue("sweetFlaworValue").ToString();
+      //  bitterLvl.text = PlayerPrefsManager.GetFlaworValue("bitterFlaworValue").ToString();
+      //  savoryLvl.text = PlayerPrefsManager.GetFlaworValue("savoryFlaworValue").ToString();
 
     }
-	
-	// Update is called once per frame
-	void Update () {
+  
+    // Update is called once per frame
+    void Update () {
 		
 	}
 }

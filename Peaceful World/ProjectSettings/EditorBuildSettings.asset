@@ -14,3 +14,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/IndustryLab.unity
     guid: ec2feeebda28d864e91ccb2677529fcf
+  - enabled: 1
+    path: Assets/Scenes/QuestMain.unity
+    guid: 5b99c872363f3d141924a4792ec810b7

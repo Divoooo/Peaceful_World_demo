@@ -9,6 +9,9 @@ TagManager:
   - SweetFlawor
   - BitterFlawor
   - SavoryFlawor
+  - game_manager
+  - script_holder
+  - new_user_input
   layers:
   - Default
   - TransparentFX
