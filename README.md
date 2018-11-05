@@ -2,8 +2,8 @@
 
 2D Idle/strategy game
 
-- Static User system with stats from database throw all sceenes
-- Adding new User with ActiveQuest in Database as well as Login with SQLie4 and player Prefs
+- Static User system with stats from database through all sceenes
+- Adding new User with ActiveQuest in Database as well as Login with SQLite4 and player Prefs
 - Active Quest System - Showing quests, checking Expired quests, sorting and saving in database
 - buying items in "Industry Lab" checking and saving in database
 - "Smell Lab system" - upgrading items checking AFK time and updating stats
